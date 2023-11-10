@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+
+.container {
+    background-color: #222;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-app {
+    background-image: linear-gradient(45deg, #3398a4 0%, #9fc2d4 100%);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.city-name {
+    border: none;
+    outline: none;
+    background-color: #f6f6f6;
+    width: 180px;
+    border-radius: 30px;
+    padding: 10px 15px;
+    min-height: 25px;
+    margin-right: 10px;
+    caret-color: #3398a4;
+}
+
+.city-name::placeholder {
+    transition: 0.3s;
+}
+
+.city-name:focus::placeholder {
+    opacity: 0;
+}
+
+.search {
+    color: #777;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.vaild {
+    color: black;
+    position: absolute;
+    left: 0;
+    bottom: -23px;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+}
+
+.weather {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.feel-like,
+.status {
+    position: absolute;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    left: 0;
+    letter-spacing: -1px;
+}
+
+.status {
+    bottom: -35px;
+}
+
+.feel-like span {
+    position: relative;
+}
+
+.feel-like span::before {
+    content: "o";
+    position: absolute;
+    font-size: 14px;
+    right: -8px;
+    top: -7px;
+}
+
+.img {
+    width: 150px;
+}
+
+.degree {
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    margin-top: -15px;
+    font-weight: lighter;
+}
+
+.degree span {
+    position: relative;
+}
+
+.degree span::before {
+    content: "o";
+    position: absolute;
+    font-size: 22px;
+    right: -8px;
+    font-weight: bold;
+}
+
+.city {
+    color: white;
+    font-size: 45px;
+}
+
+.wind {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.Humidity,
+.wind-speed {
+    color: white;
+    display: flex;
+
+}
+
+.Humidity i,
+.wind-speed i {
+    margin-right: 10px;
+}
+
+
+
+.info p {
+    font-size: 17px;
+    letter-spacing: -1px;
+}
+
+.info p span {
+    font-size: 21px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.info span {
+    font-size: 12px
+}
